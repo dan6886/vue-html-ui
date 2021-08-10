@@ -20,12 +20,14 @@
 </head>
 <body>
 <h1>你好，世界！</h1>
-<ul class="nav nav-pills">
-    <li role="presentation" class="active"><a href="#">Home</a></li>
-    <li role="presentation"><a href="#">Profile</a></li>
-    <li role="presentation"><a href="#">Messages</a></li>
-</ul>
-
+<form action="/show" method="get">
+    <div class="input-group">
+        <input type="text" name="sourcePath" class="form-control" placeholder="Search for...">
+        <span class="input-group-btn">
+        <button class="btn btn-default" type="submit">Go!</button>
+      </span>
+    </div><!-- /input-group -->
+</form>
 
 <!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
 <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"
@@ -44,6 +46,8 @@
                console.log("click",)
               });
             });
+
+
 </script>
 </body>
 </html>
